@@ -10,6 +10,14 @@ namespace ConfigManager
 
         }
 
+        /// <summary>
+        /// Used to create an empty config file. Useful for creating a config file from code
+        /// </summary>
+        public ConfigFile()
+        {
+            
+        }
+
         public ConfigFile(IEnumerable<string> fileLines)
         {
             ParsedLines = new List<IConfigLine>();
